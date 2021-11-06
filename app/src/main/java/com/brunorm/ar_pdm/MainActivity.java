@@ -1,5 +1,6 @@
 package com.brunorm.ar_pdm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,8 +55,8 @@ private ActivityMainBinding binding;
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_about) {
+            startActivity(new Intent(getApplicationContext(), AboutActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
