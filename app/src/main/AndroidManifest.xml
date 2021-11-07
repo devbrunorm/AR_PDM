@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AR_PDM">
         <activity
+            android:name=".PersonalInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".AboutActivity"
             android:exported="false" />
         <activity

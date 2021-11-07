@@ -2,22 +2,23 @@ package com.brunorm.ar_pdm;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.brunorm.ar_pdm.databinding.ActivityMainBinding;
 
-import android.view.Menu;
-import android.view.MenuItem;
+import com.brunorm.ar_pdm.databinding.ActivityMainBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-private ActivityMainBinding binding;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,9 @@ private ActivityMainBinding binding;
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
             startActivity(new Intent(getApplicationContext(), AboutActivity.class));
+        }
+        else if (id == R.id.action_personal_info) {
+            startActivity(new Intent(getApplicationContext(), PersonalInfoActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
