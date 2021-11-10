@@ -9,8 +9,20 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Tela de Sobre -->
     <string name="text_about">Este é um aplicativo desenvolvido pelo acadêmico Bruno Renzi Marques como parte integratante do processo avaliativo na disciplina de Programação de Dispositivos Móveis do curso de Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Paranaense</string>
+
+    <!-- Tela de Informações Pessoais -->
     <string name="title_activity_personal_info">Informações Pessoais</string>
-    <string name="hint_input_personal_name">Nome Completo</string>
-    <string name="hint_input_personal_birthday">Data de Nascimento</string>
+    <string name="label_personal_complete_name">Nome Completo</string>
+    <string name="hint_input_personal_name">Nome</string>
+    <string name="label_personal_gender">Sexo</string>
+    <string name="label_radio_personal_gender_male">Masculino</string>
+    <string name="label_radio_personal_gender_female">Feminino</string>
+    <string name="label_radio_personal_gender_outer">Outro</string>
+    <string name="label_personal_birthday">Data de Nascimento</string>
+    <string name="hint_input_personal_birthday">Dia</string>
+    <string name="hint_input_personal_birthmonth">Mês</string>
+    <string name="hint_input_personal_birthyear">Ano</string>
 </resources>

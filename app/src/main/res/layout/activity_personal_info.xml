@@ -12,62 +12,111 @@
         android:padding="10dp"
         android:orientation="vertical"
     >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_personal_complete_name"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
         <com.google.android.material.textfield.TextInputLayout
             app:startIconDrawable="@drawable/person_icon"
             android:id="@+id/inputPersonalInfoName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:hint="@string/hint_input_personal_name">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-            />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
-            <RadioGroup
-                android:id="@+id/inputPersonalInfoGender"
-                android:checkedButton="@+id/radio_button_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-            >
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:rowCount="1"
-                    android:orientation="horizontal"
-                >
-                    <RadioButton
-                        android:id="@+id/gender_male"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Masculino"
-                    />
-                    <RadioButton
-                        android:id="@+id/gender_female"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Feminino"
-                    />
-                    <RadioButton
-                        android:id="@+id/gender_outers"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Outro"
-                    />
-                </GridLayout>
-            </RadioGroup>
-        <com.google.android.material.textfield.TextInputLayout
-            app:startIconDrawable="@drawable/person_icon"
-            android:id="@+id/inputPersonalInfoBirthday"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_personal_gender"/>
+        <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/inputPersonalInfoName"
-            android:hint="@string/hint_input_personal_birthday">
-            <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+        <RadioGroup
+            android:id="@+id/inputPersonalInfoGender"
+            android:checkedButton="@+id/radio_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:columnCount="3"
+                android:rowCount="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_radio_personal_gender_male" />
+                <RadioButton
+                    android:id="@+id/gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_radio_personal_gender_female" />
+                <RadioButton
+                    android:id="@+id/gender_outers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_radio_personal_gender_outer" />
+            </GridLayout>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_personal_birthday"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputPersonalInfoBirthDay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/hint_input_personal_birthday">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputPersonalInfoBirthMonth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/hint_input_personal_birthmonth">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputPersonalInfoBirthYear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:hint="@string/hint_input_personal_birthyear">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>
