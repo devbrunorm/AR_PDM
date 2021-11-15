@@ -21,9 +21,6 @@
     <string name="label_personal_complete_name">Nome Completo</string>
     <string name="hint_input_personal_name">Nome</string>
     <string name="label_personal_gender">Sexo</string>
-    <string name="label_radio_personal_gender_male">Masculino</string>
-    <string name="label_radio_personal_gender_female">Feminino</string>
-    <string name="label_radio_personal_gender_outer">Outro</string>
     <string name="label_personal_birthday">Data de Nascimento</string>
     <string name="hint_input_personal_birthday">Dia</string>
     <string name="hint_input_personal_birthmonth">Mês</string>
