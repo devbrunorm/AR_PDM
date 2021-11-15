@@ -10,7 +10,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <!-- Lista -->
+    <!-- Main Actitivty -->
+    <string name="button_weather">VERIFICAR PREVISÃO DO TEMPO</string>
 
     <!-- Tela de Sobre -->
     <string name="text_about">Este é um aplicativo desenvolvido pelo acadêmico Bruno Renzi Marques como parte integratante do processo avaliativo na disciplina de Programação de Dispositivos Móveis do curso de Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Paranaense</string>
