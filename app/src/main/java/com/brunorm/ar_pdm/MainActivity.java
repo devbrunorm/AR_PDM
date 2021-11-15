@@ -1,22 +1,24 @@
 package com.brunorm.ar_pdm;
 
+import android.content.Intent;
 import android.os.Bundle;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.brunorm.ar_pdm.databinding.ActivityMainBinding;
 
-import android.view.Menu;
-import android.view.MenuItem;
+import com.brunorm.ar_pdm.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-private ActivityMainBinding binding;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,19 +29,20 @@ private ActivityMainBinding binding;
 
         setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+//        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        Button weatherButton = findViewById(R.id.button_weather_forecast);
+        weatherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(getApplicationContext(), WeatherForecastActivity.class));
             }
         });
     }
-@Override
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -54,8 +57,11 @@ private ActivityMainBinding binding;
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_about) {
+            startActivity(new Intent(getApplicationContext(), AboutActivity.class));
+        }
+        else if (id == R.id.action_personal_info) {
+            startActivity(new Intent(getApplicationContext(), PersonalInfoActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
