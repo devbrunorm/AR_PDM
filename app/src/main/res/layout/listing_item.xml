@@ -7,31 +7,64 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
         android:layout_margin="8dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/dateText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="" />
-            <TextView
-                android:id="@+id/minText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="" />
-            <TextView
-                android:id="@+id/maxText"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/minLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min:" />
+                <TextView
+                    android:id="@+id/minText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/maxLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fab_margin"
+                    android:text="Max:" />
+                <TextView
+                    android:id="@+id/maxText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red_700"
+                    android:textStyle="bold"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="" />
-            <TextView
-                android:id="@+id/descriptionText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="" />
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/descriptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição:" />
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
