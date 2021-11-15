@@ -31,7 +31,7 @@
             android:id="@+id/button_weather_forecast"
             android:layout_margin="@dimen/fab_margin"
             android:textColor="@color/white"
-            android:text=""/>
+            android:text="@string/button_weather"/>
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
