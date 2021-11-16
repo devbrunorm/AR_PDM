@@ -11,18 +11,16 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <!-- Main Actitivty -->
-    <string name="button_weather">VERIFICAR PREVISÃO DO TEMPO</string>
+    <string name="button_weather">VERIFICAR PREVISÃO DO TEMPO - UMUARAMA</string>
 
     <!-- Tela de Sobre -->
     <string name="text_about">Este é um aplicativo desenvolvido pelo acadêmico Bruno Renzi Marques como parte integratante do processo avaliativo na disciplina de Programação de Dispositivos Móveis do curso de Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Paranaense</string>
-
-    <!-- Tela de Informações Pessoais -->
-    <string name="title_activity_personal_info">Informações Pessoais</string>
-    <string name="label_personal_complete_name">Nome Completo</string>
-    <string name="hint_input_personal_name">Nome</string>
-    <string name="label_personal_gender">Sexo</string>
-    <string name="label_personal_birthday">Data de Nascimento</string>
-    <string name="hint_input_personal_birthday">Dia</string>
-    <string name="hint_input_personal_birthmonth">Mês</string>
-    <string name="hint_input_personal_birthyear">Ano</string>
+    <string name="name_about_label">Acadêmico:</string>
+    <string name="name_about">Bruno Renzi Marques</string>
+    <string name="ra_about_label">RA:</string>
+    <string name="ra_about">09019085</string>
+    <string name="course_about_first">Tecnologia em Análise e</string>
+    <string name="course_about_second">Desenvolvimento de Sistemas</string>
+    <string name="university_about_first">Universidade Paranaense</string>
+    <string name="university_about_second">EAD - Polo Umuarama</string>
 </resources>
