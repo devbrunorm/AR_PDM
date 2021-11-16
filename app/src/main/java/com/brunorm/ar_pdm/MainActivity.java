@@ -29,10 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-//        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
         Button weatherButton = findViewById(R.id.button_weather_forecast);
         weatherButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,9 +55,6 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
             startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-        }
-        else if (id == R.id.action_personal_info) {
-            startActivity(new Intent(getApplicationContext(), PersonalInfoActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
